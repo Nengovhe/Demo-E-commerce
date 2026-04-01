@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo E-Commerce</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;}
+header{background:#FF5722;color:white;padding:2rem;text-align:center;}
+nav a{color:white;margin:0 1rem;text-decoration:none;}
+section{padding:2rem;}
+.products{display:flex;gap:1rem;flex-wrap:wrap;}
+.product{flex:1 1 calc(33%-1rem);background:#f4f4f4;padding:1rem;text-align:center;}
+button{background:#2196F3;color:white;border:none;padding:0.5rem 1rem;cursor:pointer;}
+footer{background:#333;color:white;text-align:center;padding:1rem;}
+@media(max-width:768px){.products{flex-direction:column}.product{flex:1 1 100%;}}
+</style>
+</head>
+<body>
+<header>
+<h1>Shop Demo</h1>
+<nav><a href="#products">Products</a> | <a href="#about">About</a> | <a href="#contact">Contact</a></nav>
+</header>
+
+<section id="products">
+<h2>Our Products</h2>
+<div class="products">
+  <div class="product"><h3>Product 1</h3><p>$10</p><button>Add to Cart</button></div>
+  <div class="product"><h3>Product 2</h3><p>$15</p><button>Add to Cart</button></div>
+  <div class="product"><h3>Product 3</h3><p>$20</p><button>Add to Cart</button></div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Shop</h2>
+<p>Demo e-commerce site to showcase products and simple cart functionality.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: shop@example.com | Phone: +123456789</p>
+</section>
+
+<footer>
+<p>© 2026 Demo Shop</p>
+</footer>
+</body>
+</html>
